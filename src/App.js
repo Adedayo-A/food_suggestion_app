@@ -1,44 +1,37 @@
 import React, { useState, useEffect } from 'react';
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, Navigate} from 'react-router-dom';
+import { red } from '@mui/material/colors';
 
 import Homepage from './home/homepage';
 import FoodPage from './dashboard/foodResultPage';
+import Login from './user/login';
+import Register from './user/register';
+import ProtectedRoutes from './util/protected-route';
 
-import logo from './logo.svg';
+import NavBar from './reusabale-components/navbar';
+import AddIngredient from './profile/addIngredients';
+import MyProfile from './profile/myprofile';
+import Dashboard from './dashboard/foodResultPage';
+
 import './App.css';
 
-function App() {
-  // const [currentTime, setCurrentTime] = useState(0);
 
-  // useEffect(() => {
-  //   fetch('/time').then(res => res.json()).then(data => {
-  //     setCurrentTime(data.time);
-  //   }).catch(error => console.error('Error fetching data:', error));;
-  // }, []);
+function App() {
   
   return (
     <div>
+      <NavBar />
       <Routes>
+        <Route element={<ProtectedRoutes/>}>
+          <Route path='/add-ingredient' element={<AddIngredient />} />
+          <Route path='/my-profile' element={<MyProfile />} />
+        </Route>
+
         <Route path='/' element={<Homepage />} />
-        <Route path='/food-page' element={<FoodPage />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/dashboard' element={<FoodPage/>} />
       </Routes>
-
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-
-      {/* <p>The current time is {currentTime}.</p> */}
     </div>
   );
 }

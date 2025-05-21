@@ -1,4 +1,4 @@
-import iOption from "../../interfaces/iOption";
+import iOption from "../interfaces/iOption";
 
 const recipeList: iOption[] = [
     {

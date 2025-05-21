@@ -1,0 +1,21 @@
+.list-component {
+    /* border-style: solid;
+    border-width: 3px; */
+
+    box-shadow: 0 30px 40px rgba(0,0,0,.1); 
+
+    /* border-style:solid; */
+    /* border-image:linear-gradient(white, transparent) 1; */
+    /* border-bottom:0; */
+    /* background-color: #42006C; */
+}
+
+.border_gradient {
+    border: 8px solid #000;
+    -moz-border-bottom-colors:#897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+    -moz-border-top-colors:#897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+    -moz-border-left-colors:#897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+    -moz-border-right-colors:#897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+    padding: 5px 5px 5px 15px;
+    width: 300px;
+}

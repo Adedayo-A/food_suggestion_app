@@ -15,7 +15,7 @@ const CustomMultiSelectDropdown: FC<OptionProps> = ({options, selected, toggleOp
     return (
         <div className="c-multi-select-dropdown">
             <div className="c-multi-select-dropdown__selected">
-                <div> selected.length selected </div>
+                <div> {selected.length} selected </div>
                 <ArrowDropDown />
             </div>
 

@@ -1,22 +1,82 @@
-.i-body {
-    background-color: #66a1d5;
+.loader-container {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
 
-    .i-body_container {
-        margin:100px auto;
-        width:300px;
-        width: 300px;
+// Parent, body, container, wrapper
+.main-wrapper {
+    // background: #90d6ff;
+    height: 90vh;
+    .no-data-found {
+        margin: 0 auto;
+        background-color: aqua;
+        height: 49px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .i-suggestion-button {
-        background-color: purple;
-        border-radius: 5px;
-        font-weight: bold;
-        font-size: 18px;
-        font-family: monospace;
-        color: white;
-        padding: 20px;
-        margin-left: 10px;
-        text-align: center;
-        cursor: pointer;
+    .homepage-parent {
+        // background-color: #66a1d5;
+        // min-height: 100vh;
+        // padding: 10px 0;
+    
+        .homepage-searchfield-container {
+            display: flex;
+            // margin-top: 20px;
+            background-color: #fff;
+
+    
+            .homepage-searchfield {
+                width: 23%;
+                margin: 0 auto;
+                background-color: #fff;
+                text-align: center;
+                // padding-bottom: 10px;
+                margin-top: 15px;
+            }
+        }
+    
+        .homepage-parent_2 {
+            margin: 0 auto;
+            width:300px;
+            width: 300px;
+            margin-top: 20px;
+        }
+    
+        .homepage_button_container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .homepage-parent_3 {
+            display: flex;
+            gap: 30px;
+            margin: 7px auto;
+            justify-content: center;
+
+            .submit-suggestion-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 169px;
+                height: 53px;
+                color: #fff;
+                background: #0066cc;
+                border-radius: 50px;
+                font-size: 19px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            .submit-suggestion-btn {
+                height: 50px;
+                width: 15%;
+                margin-top: 10px;
+            }
+
+        }
+
     }
 }

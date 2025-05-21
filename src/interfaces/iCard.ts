@@ -1,6 +1,8 @@
 export default interface iCard {
-    image: string;
-    title: string;
-    description: string;
+    imageUrl: string;
+    name: string;
+    about: string;
+    cookingSteps: string[];
     ingredients: string[];
+    nutritionalValues: string;
 }
